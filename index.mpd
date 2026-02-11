@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD id='dash' type="dynamic" xmlns="urn:mpeg:dash:schema:mpd:2011"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 DASH-MPD.xsd"
+  profiles="urn:mpeg:dash:profile:isoff-live:2011"
+  minBufferTime="PT11S"
+  suggestedPresentationDelay="PT11S"
+  availabilityStartTime="2026-02-08T13:26:21Z"
+  publishTime="2026-02-08T20:44:27Z"
+  minimumUpdatePeriod="PT3.5S"
+  maxSegmentDuration="PT6S"
+  timeShiftBufferDepth="PT20S">
+    <Period id='1770557181' start="PT0S" >
+        <AdaptationSet id="1" mimeType="video/mp4" contentType="video" maxWidth="1280" maxHeight="720" par="1280:720"  maxFrameRate="30" segmentAlignment="true" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+            <Representation id="tracks-v1" width="1280" height="720" sar="1:1" frameRate="30" bandwidth="2630000" codecs="avc1.42c01f">
+              <SegmentTemplate initialization="$RepresentationID$/init.m4v" media="$RepresentationID$/seg-1770557181-$Number$.m4v?t=$Time$" timescale="1000"  startNumber="25252">
+                 <SegmentTimeline>
+   <S t="26266939" d="5000" r="3"/>
+                 </SegmentTimeline>
+              </SegmentTemplate>
+            </Representation>
+        </AdaptationSet>
+    </Period>
+    <UTCTiming schemeIdUri="urn:mpeg:dash:utc:direct:2014" value="2026-02-08T20:44:27Z" />
+</MPD>
